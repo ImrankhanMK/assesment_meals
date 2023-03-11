@@ -8,17 +8,16 @@ function MealInst(props) {
 
     const location = useLocation();
     const mealId = location.state.id;
-   
+    //state for managing meals instruction
     const [inst, setInst] = useState([]);
 
-
-  
+    // fetching meals discription by usingID
     useEffect(() => {
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
         .then((response) => response.json())
         .then((data) => setInst(data));
     },[])
-    // console.log(mealId);
+
     console.log(inst)
   return (
     <div>

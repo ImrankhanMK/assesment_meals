@@ -1,7 +1,6 @@
 .categories{
     display: flex;
     min-height: 91vh;
-    /* padding:10px */
 }
 .categories_outerdiv{
     background-color: black;
@@ -12,8 +11,6 @@
 .categories_outerdiv h1{
     padding:10px 0px;
     border-bottom: 1px solid white;
-    /* color: red; */
-   /* margin: auto; */
 }
 .categories_innerdiv{
     padding: 20px;

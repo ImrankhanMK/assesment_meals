@@ -9,19 +9,19 @@ function Categories() {
   //sate for managing category list
   const [categoriesList, setCategoriesList] = useState([]);
 
+  //state for managing meals list
   const [mealList, setMealList] = useState([]);
 
-  //function to show mwal in category
+  //function to show meals in category
   const mealInCat = async (categ) => {
     // console.log(categ);
     const { data } = await axios.get(
       `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categ}`
     );
-    // console.log(data)
     setMealList(data);
-    // console.log(mealList)
   };
 
+  //function to fetch categoties from API
   const fetchCategories = async () => {
     const { data } = await axios.get(
       "https://www.themealdb.com/api/json/v1/1/categories.php"

@@ -4,6 +4,7 @@ import "../Meals/meals.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
+
 function Meals(props) {
   console.log("data", props.data);
   const success = useNavigate();
