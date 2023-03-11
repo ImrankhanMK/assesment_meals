@@ -1,0 +1,14 @@
+.meals{
+    margin-top: 10px;
+}
+.categories_meal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.categories_meal h1{
+    margin: auto;
+    text-transform: capitalize;
+    border: 1px solid #d9534f;
+    border-radius: 20px;
+    padding: 5px 10px;
+}

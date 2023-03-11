@@ -1,0 +1,37 @@
+.categories{
+    display: flex;
+    min-height: 91vh;
+    /* padding:10px */
+}
+.categories_outerdiv{
+    background-color: black;
+    color: white;
+    flex: 1;
+    
+}
+.categories_outerdiv h1{
+    padding:10px 0px;
+    border-bottom: 1px solid white;
+    /* color: red; */
+   /* margin: auto; */
+}
+.categories_innerdiv{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.categories_innerdiv p{
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;  
+    transition: 0.7s;
+}
+.categories_innerdiv p:hover{
+    background-color: #d9534f;
+    scale: 1.1;
+}
+.router_div{
+    flex: 3;
+}
